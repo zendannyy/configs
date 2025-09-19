@@ -3,8 +3,12 @@
 # vagrant aliases
 alias vgssh="vagrant ssh; vagrant up"
 
-
+# git aliases
 alias gitpu="git push origin main"
+# git push the 'right' way
+alias gitpsu="git push --set-upstream origin $1"
+
+alias gitmerge="git merge $1; git push -u origin main"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
