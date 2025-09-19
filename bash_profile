@@ -6,7 +6,7 @@ alias vgssh="vagrant ssh; vagrant up"
 # git aliases
 alias gitpu="git push origin main"
 # git push the 'right' way
-git push --set-upstream origin $1
+alias gitpsu="git push --set-upstream origin $1"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
