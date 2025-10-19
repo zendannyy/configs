@@ -8,6 +8,13 @@ if [ "$OS_ID" = 'Darwin' ]; then
     echo $OS_ID
     brew update
     brew install git curl wget
+elif [$OS_ID = 'alpine' ]; then
+    echo $OS_ID
+    apk add -y git curl wget
+elif [$OS_ID = 'fedora' ]; then
+    echo $OS_ID
+    dnf update -y
+    dnf install -y git curl wget
 elif [$OS_ID = 'ubuntu' ]; then
     echo $OS_ID
     apt-get update -y 
