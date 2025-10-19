@@ -22,4 +22,4 @@ elif [$OS_ID = 'ubuntu' ]; then
 else
     echo "ERROR: Unsupported distribution: $OS_ID"
 
-fi 
+fi
