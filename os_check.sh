@@ -14,11 +14,11 @@ elif [$OS_ID = 'alpine' ]; then
 elif [$OS_ID = 'fedora' ]; then
     echo $OS_ID
     dnf update -y
-    dnf install -y git curl wget
+    dnf install -y --skip-broken git curl wget
 elif [$OS_ID = 'ubuntu' ]; then
     echo $OS_ID
     apt-get update -y 
-    apt-get install -y git curl wget
+    apt-get install -y --fix-broken git curl wget
 else
     echo "ERROR: Unsupported distribution: $OS_ID"
 
