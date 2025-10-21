@@ -15,7 +15,7 @@ elif [$OS_ID = 'fedora' ]; then
     echo $OS_ID
     dnf update -y
     dnf install -y --skip-broken git curl wget
-elif [$OS_ID = 'ubuntu' ]; then
+elif [$OS_ID = 'debian' ]; then
     echo $OS_ID
     apt-get update -y 
     apt-get install -y --fix-broken git curl wget
