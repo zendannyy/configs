@@ -11,6 +11,7 @@ brew_bootstrap() {
     log_info "Homebrew found → updating & upgrading…"
     brew update; brew upgrade; brew cleanup
   fi
+  
   [[ $(uname -m) == arm64 ]] &&
     { eval "$(/opt/homebrew/bin/brew shellenv)";
       grep -q "/opt/homebrew" ~/.zprofile 2>/dev/null ||

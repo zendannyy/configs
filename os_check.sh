@@ -1,7 +1,7 @@
 #!/usr/bin/env bash 
 # script for new installs or docker hosts 
 
-# one-liner to determine os distro and id
+# one-liner to determine os distro
 OS_ID=$(uname)
 
 if [ "$OS_ID" = 'Darwin' ]; then
