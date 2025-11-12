@@ -1,7 +1,7 @@
 # bash_profile config for new setups
 
 # vagrant aliases
-alias vgrssh="vagrant reaload; vagrant ssh"
+alias vgrssh="vagrant reload; vagrant ssh"
 alias vgssh="vagrant ssh; vagrant up"
 
 # git aliases
