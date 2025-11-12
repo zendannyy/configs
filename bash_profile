@@ -2,7 +2,7 @@
 
 # vagrant aliases
 alias vgrssh="vagrant reload; vagrant ssh"
-alias vgssh="vagrant ssh; vagrant up"
+alias vgssh="vagrant up; vagrant ssh"
 
 # git aliases
 alias gitpu="git push origin main"
